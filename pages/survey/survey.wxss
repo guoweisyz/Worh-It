@@ -1,0 +1,56 @@
+.container {
+  padding: 30rpx;
+}
+
+.header {
+  margin-bottom: 40rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #666;
+  display: block;
+}
+
+.section {
+  margin-bottom: 30rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  display: block;
+}
+
+.question {
+  margin-bottom: 30rpx;
+}
+
+.question-title {
+  font-size: 28rpx;
+  margin-bottom: 15rpx;
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+
+radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+radio-group label {
+  margin: 10rpx 0;
+}

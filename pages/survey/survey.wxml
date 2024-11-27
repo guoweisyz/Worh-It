@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="header">
+    <text class="title">值得安排的日子——时间管理与个人成长调查</text>
+    <text class="subtitle">感谢您参与我们的调研。本问卷旨在了解上班族的时间管理现状、痛点和对效率提升工具的需求。所有信息将严格保密，仅用于研究。</text>
+  </view>
+
+  <form bindsubmit="submitForm">
+    <!-- 分段显示问题 -->
+    <view class="section" wx:if="{{currentSection === 1}}">
+      <text class="section-title">第一部分：基本信息</text>
+      
+      <view class="question">
+        <text class="question-title">1. 您的年龄段是？</text>
+        <radio-group name="age">
+          <label wx:for="{{ageOptions}}" wx:key="index">
+            <radio value="{{item.value}}">{{item.label}}</radio>
+          </label>
+        </radio-group>
+      </view>
+      
+      <!-- 其他基本信息问题 -->
+    </view>
+
+    <!-- 导航按钮 -->
+    <view class="navigation">
+      <button wx:if="{{currentSection > 1}}" bindtap="prevSection">上一页</button>
+      <button wx:if="{{currentSection < totalSections}}" bindtap="nextSection">下一页</button>
+      <button wx:if="{{currentSection === totalSections}}" form-type="submit">提交</button>
+    </view>
+  </form>
+</view> 
